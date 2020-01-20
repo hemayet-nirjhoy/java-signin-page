@@ -23,10 +23,10 @@
             String name = object.check_signin(username, password);
         %>
         
-        <p><%if(name!=null){%>
-                Successfully Signed in.
+        <p style="text-align: center;font-size: 40px;"><%if(name!=null){%>
+            <span style="color:green;">Successfully Signed in.</span>
             <%}else{%>
-                Username or Password is incorrect!
+            <span style="color:red;">Username or Password is incorrect!</span>
             <%}%>
         </p>
     </body>
